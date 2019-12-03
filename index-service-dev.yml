@@ -9,6 +9,14 @@ product-service:
     OkToRetryOnAllOperations: true # 是否对所有操作都进行重试
     MaxAutoRetriesNextServer: 2 # 切换实例的重试次数
 
+#添加RabbitMQ的配置
+spring:
+  rabbitmq:
+    host: 134.175.30.121
+    virtual-host: /java1907
+    username: java1907
+    password: 123
+    
 feign:
   hystrix:
     enabled: true
